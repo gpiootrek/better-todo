@@ -1,0 +1,7 @@
+@use "../../scss" as *;
+
+.board {
+  flex-grow: 1;
+  width: 80vw;
+  background: $primary-background;
+}
