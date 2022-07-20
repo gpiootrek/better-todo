@@ -1,0 +1,29 @@
+@use "../../../scss" as *;
+
+.card {
+  min-width: 24rem;
+  margin-top: 1rem;
+  padding: 2rem 3rem;
+  border-radius: 0.6rem;
+  border-bottom: 0.3rem solid $secondary-border;
+  background: $secondary-background;
+  cursor: pointer;
+  transition: transform .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  &:hover {
+    transform: scale(.98);
+  }
+
+  &__title {
+    color: $primary-text;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  &__subtitle {
+    margin-top: 1rem;
+    color: $secondary-text;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+}

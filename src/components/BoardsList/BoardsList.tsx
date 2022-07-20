@@ -4,8 +4,10 @@ import "./boardsList.scss";
 const BoardsList = () => {
   return (
     <ul className="boards__list">
-      <li className="boards__element">
-        <button className="boards__button boards__button--active">Platform Launch</button>
+      <li className="boards__element boards__element--active">
+        <button className="boards__button">
+          Platform Launch
+        </button>
       </li>
       <li className="boards__element">
         <button className="boards__button">Marketing Plan</button>

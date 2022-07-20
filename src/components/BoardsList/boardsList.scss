@@ -5,30 +5,33 @@
     padding-left: 3rem;
     margin: 1rem 0;
     font-size: 1.25rem;
-    font-weight: 500;
-    color: $primary-text;
+    font-weight: 700;
+    color: $secondary-text;
     text-transform: uppercase;
-    letter-spacing: .2rem;
+    letter-spacing: 0.4rem;
   }
-  &__list {
-    list-style-image: url("../../assets/board-svgrepo-com.svg");
-  }
+
   &__element {
-  }
-  &__button {
-    width: 80%;
-    padding: 1rem 3rem;
+    width: 90%;
     margin: 1rem 0 0.5rem;
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    &--active {
+      background-color: $base-color;
+    }
+  }
+
+  &__button {
+    padding: 1.5rem 3rem;
     border: 0;
     background-color: transparent;
     text-align: left;
     color: $primary-text;
     cursor: pointer;
+    transition: transform 0.4s ease;
 
-    &--active {
-      border-top-right-radius: 2rem;
-      border-bottom-right-radius: 2rem;
-      background-color: $base-color;
+    &:hover {
+      transform: translateX(1rem);
     }
   }
 }

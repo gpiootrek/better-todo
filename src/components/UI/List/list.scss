@@ -1,0 +1,46 @@
+@use "../../../scss" as *;
+
+.list {
+  padding: 2rem 4rem;
+
+  &__heading {
+    position: relative;
+    padding-left: 2rem;
+    color: $secondary-text;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1.2rem;
+      height: 1.2rem;
+      border-radius: 50%;
+    }
+
+    &--todo {
+      &::after {
+        background-color: $todo-color;
+      }
+    }
+
+    &--doing {
+      &::after {
+        background-color: $doing-color;
+      }
+    }
+
+    &--done {
+      &::after {
+        background-color: $done-color;
+      }
+    }
+  }
+
+  &__tasks {
+    margin-top: 2rem;
+  }
+}

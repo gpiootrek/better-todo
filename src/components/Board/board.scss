@@ -1,7 +1,10 @@
 @use "../../scss" as *;
 
 .board {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-grow: 1;
-  width: 80vw;
+  width: 85vw;
   background: $primary-background;
 }

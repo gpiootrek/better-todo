@@ -10,7 +10,7 @@ const Header = () => {
     <header className="header">
       {/* TODO: Put a board name in heading */}
       <h2 className="header__heading">Platform Launch</h2>
-      <div>
+      <div className="header__buttons">
         <Button
           onClick={handleClick}
           text="+ Add New Task"

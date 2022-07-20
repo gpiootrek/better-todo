@@ -7,10 +7,10 @@ type ButtonProps = {
   classes: string;
 };
 
-const Button = (props: ButtonProps) => {
+const Button = ({ onClick, classes, text }: ButtonProps) => {
   return (
-    <button onClick={props.onClick} className={`button ${props.classes}`}>
-      {props.text}
+    <button onClick={onClick} className={`button ${classes}`}>
+      {text}
     </button>
   );
 };
