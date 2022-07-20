@@ -1,0 +1,37 @@
+@use "../../scss" as *;
+
+.boards {
+  &__title {
+    padding-left: 3rem;
+    margin: 1rem 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: $secondary-text;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+  }
+
+  &__element {
+    width: 90%;
+    margin: 1rem 0 0.5rem;
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    &--active {
+      background-color: $base-color;
+    }
+  }
+
+  &__button {
+    padding: 1.5rem 3rem;
+    border: 0;
+    background-color: transparent;
+    text-align: left;
+    color: $primary-text;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+
+    &:hover {
+      transform: translateX(1rem);
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.dropdown {
+  border: none;
+  background-color: transparent;
+  filter: invert(1);
+  cursor: pointer;
+
+  &__img {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}
